@@ -9,3 +9,13 @@ Note that the coordinates should be signed (positive or negative) floats
 """
 import math
 
+def distance( (a,b), (c,d)):
+    a=float(a)
+    b=float(b)
+    c=float(c)
+    d=float(d)
+    answer1=(c-a)**2
+    answer2=(d-b)**2
+    answer3=math.sqrt(answer1+answer2)
+    return answer3
+
