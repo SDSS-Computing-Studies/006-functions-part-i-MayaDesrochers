@@ -8,14 +8,13 @@ Note that the coordinates should be signed (positive or negative) floats
 (2 points)
 """
 import math
-
-def distance( (a,b), (c,d)):
-    a=float(a)
-    b=float(b)
-    c=float(c)
-    d=float(d)
-    answer1=(c-a)**2
-    answer2=(d-b)**2
-    answer3=math.sqrt(answer1+answer2)
-    return answer3
-
+def distance(coord1,coord2):
+    
+    (x1,y1)=coord1
+    (x2,y2)=coord2
+    x1=float(x1)
+    x2=float(x2)
+    y1=float(y1)
+    y2=float(y2)
+    dist = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+    return dist
