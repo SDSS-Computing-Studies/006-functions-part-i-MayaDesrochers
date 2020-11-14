@@ -11,17 +11,22 @@ import math
 def hypotenuse(x,y,z):
     x=float(x)
     y=float(y)
-    while z==False:
+    if z==False:
         if x>y:
             larger_number=x
-            return larger_number
-        elif x<y:
+            answer=math.sqrt((x**2)-(y**2))
+            
+            return answer
+        if x<y:
             larger_number=y
-            return larger_number
+            answer=math.sqrt((y**2)-(x**2))
+            
+            return answer
     
     if z==True:
-        answer=math.sqrt((x**2) +(y**2))
-        return answer
+        answer=math.sqrt((x**2)+(y**2))
+        
+        return answer 
 
 
 
