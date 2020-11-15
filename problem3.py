@@ -9,12 +9,15 @@ Example: The factors of 10 are 1, 2, 5, 10
 (2 points)
 """
 def factors(a):
-    
+
+    a=int(a)
+    numList=[]
     for i in range(1,a+1):
-        if a%1==0:
-            numList=[]
+        if a%i==0:
+        
             numList.append(i)
             numList.sort()
-            return numList 
+    return numList
+ 
 
             
