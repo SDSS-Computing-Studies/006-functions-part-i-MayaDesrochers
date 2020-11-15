@@ -9,12 +9,11 @@ added together
 
 
 def perimeter(a):
-    numList=[3,4,5]
+    numList=a
     count=0
     for i in numList:
         count=count+i
     return count
-
 
 
     
