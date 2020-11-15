@@ -7,12 +7,13 @@ added together
 (2 points)
 """
 
+
 def perimeter(a):
-    for i in a:
-        x=0 + i
-        return x
-
-
+    numList=[3,4,5]
+    count=0
+    for i in numList:
+        count=count+i
+    return count
 
 
 
