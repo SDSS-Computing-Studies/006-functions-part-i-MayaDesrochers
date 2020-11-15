@@ -7,12 +7,14 @@ Return False if the number is not an integer
 (2 points)
 """
 
+import math
 def isInteger(a):
     a=float(a)
-    if a**2%(a**2)==1:
+    
+    if math.floor(a)==a:
         x=True
         return x
-    elif a**2%(a**2)>1:
+    else:
         x=False
         return x
 
